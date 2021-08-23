@@ -1,0 +1,254 @@
+.nossos-cursos{
+  &__container{
+    margin-left: calc((100vw - 1236px)/2);
+    @media (max-width: 1290px) {
+      margin-left: 35px;
+    }
+    @media (max-width: 650px) {
+      margin-left: 23px;
+    }
+    @media (max-width: 320px) {
+      margin-left: 15px;
+    }
+  }
+  &__wrapper{
+    padding: 88px 0 110px;
+    @media (max-width: 1200px){
+      padding: 75px 0 90px;
+    }
+    @media (max-width: 768px){
+      padding: 40px 0 90px;
+    }
+    @media (max-width: 650px){
+      padding: 31px 0 103px;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 110%;
+    color: #000000;
+    @media (max-width: 1200px){
+      font-size: 55px;
+    }
+    @media (max-width: 991px){
+      font-size: 52px;
+    }
+    @media (max-width: 650px){
+      font-size: 40px;
+    }
+    @media (max-width: 360px){
+      font-size: 35px;
+      white-space: nowrap;
+    }
+  }
+  &__slider{
+    margin-top: 86px;
+    width: 100%;
+    height: 341px;
+    padding-right: 15px;
+    @media (max-width: 1200px){
+      margin-top: 70px;
+      height: 320px;
+    }
+    @media (max-width: 991px){
+      margin-top: 65px;
+    }
+    @media (max-width: 650px){
+      margin-top: 33px;
+      height: 271px;
+    }
+    .swiper-slide{
+      width: 349px;
+      height: 100%;
+      @media (max-width: 650px){
+        width: 278px;
+      }
+    }
+  }
+  &__slide{
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 19px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-first{
+      background-image: url("../img/nossos-cursos__slide-bg1.png");
+    }
+    &-second{
+      background-image: url("../img/nossos-cursos__slide-bg2.png");
+    }
+    &-third{
+      background-image: url("../img/nossos-cursos__slide-bg3.png");
+    }
+    &-fourth{
+      background-image: url("../img/nossos-cursos__slide-bg4.png");
+    }
+    &-fiveth{
+      background-image: url("../img/nossos-cursos__slide-bg5.png");
+    }
+  }
+  &__slide-title{
+    font-style: normal;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000000;
+    font-family: 'CodecPro-Bold';
+    @media (max-width: 1200px){
+      font-size: 48px;
+    }
+    @media (max-width: 991px){
+      font-size: 44px;
+    }
+    @media (max-width: 650px){
+      font-size: 40px;
+    }
+  }
+  &__slide-title-small{
+    font-family: 'CodecPro-Bold';
+
+    font-style: normal;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000000;
+    span{
+      @media (max-width:650px){
+        display: block;
+      }
+    }
+    .span-hide-mob{
+      @media (max-width:650px) {
+        display: none;
+      }
+    }
+  }
+  &__slide-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slide-duration{
+    background: #000000;
+    border-radius: 20px;
+    padding: 2px 14px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 150%;
+    color: #FFFFFF;
+    @media (max-width: 650px){
+      padding: 2px 10px 0;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+  &__slide-btn{
+    margin-right: 5px;
+    transition: all .4s;
+    position: relative;
+    top: 0;
+    &:hover{
+      top: -7px;
+    }
+    @media (max-width: 650px) {
+      margin-right: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__slide-span-text{
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000000;
+    margin-right: 10px;
+  }
+  &__slide-span-arrow{
+    display: block;
+    width: 21px;
+    height: 21px;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__slider-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 101px;
+    padding-right: 122px;
+    @media (max-width: 1200px){
+      margin-top: 95px;
+    }
+    @media (max-width: 768px){
+      justify-content: center;
+      padding-right: 0;
+      margin-top: 80px;
+    }
+    @media (max-width: 650px){
+      margin-top: 71px;
+    }
+    .swiper-pagination{
+      position: relative!important;
+      display: flex;
+      align-items: center;
+    }
+    .swiper-pagination-bullet {
+      width: 10px!important;
+      height: 10px!important;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      opacity: 1;
+      margin-right: 10px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      position: relative!important;
+      background-color: #0000C4;
+      display: block;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        display: block;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background-image: url("../img/last-pagination-shadow.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+    }
+  }
+  &__arrow{
+    width: 33px;
+    height: 30px;
+    cursor: pointer;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__prev{
+    margin-right: 40px;
+  }
+  &__next{
+    margin-left: 40px;
+  }
+
+}
