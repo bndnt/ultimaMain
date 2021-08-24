@@ -1,4 +1,5 @@
 .footer {
+  overflow-x: hidden;
   .container {
     max-width: 1440px;
 
@@ -54,6 +55,12 @@
   }
 
   &__flex {
+    .br-mob {
+      display: none;
+      //@media (max-width: 500px) {
+      //  display: block;
+      //}
+    }
     display: flex;
     //font-family: 'PTRootUI-Regular';
     @media (max-width: 991px) {
@@ -91,12 +98,7 @@
         text-align: center;
       }
 
-      .br-mob {
-        display: none;
-        //@media (max-width: 500px) {
-        //  display: block;
-        //}
-      }
+
 
       @media (max-width: 991px) {
         margin-bottom: 30px !important;

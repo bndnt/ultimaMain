@@ -1,4 +1,5 @@
 .nossos-cursos{
+  overflow-x: hidden;
   &__container{
     margin-left: calc((100vw - 1236px)/2);
     @media (max-width: 1290px) {
@@ -217,7 +218,7 @@
     }
     .swiper-pagination-bullet-active{
       position: relative!important;
-      background-color: #0000C4;
+      background-color: black;
       display: block;
       &:before{
         content: '';
@@ -228,7 +229,7 @@
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        background-image: url("../img/last-pagination-shadow.svg");
+        background-image: url("../img/slider-shadow-pagination.svg");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         z-index: -1;

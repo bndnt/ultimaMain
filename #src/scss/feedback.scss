@@ -1,4 +1,5 @@
 .feedback {
+  overflow-x: hidden;
   &__container {
     margin: 0 auto;
     width: 100%;
@@ -170,27 +171,45 @@
       @media (max-width: 360px){
         font-size: 38px;
       }
+      &:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 241px;
+        height: 154px;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image:url("../img/feedback-btn-nohover.svg") ;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transition: all .6s;
+        z-index: -1;
+      }
       &:before{
         content: '';
         position: absolute;
         display: block;
-        width: 193px;
-        height: 56px;
-        left: -30px;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #14B0FA;
-        mix-blend-mode: hard-light;
-        filter: blur(24px);
-        border-radius: 60%;
+        height: 154px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         transition: all .6s;
-        z-index: 2;
-      }
-      &:hover:before{
-        width: 130%;
+        z-index: -1;
+        background-image:url("../img/feedback-btn-hover.svg") ;
+        width: 399px;
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
+        opacity: 0;
+        visibility: visible;
+      }
+      &:hover:before{
+      opacity: 1;
+        visibility: visible;
+      }
+      &:hover:after{
+        opacity: 0;
+        visibility: hidden;
       }
     }
   }

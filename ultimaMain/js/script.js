@@ -1,7 +1,7 @@
 var swiper1 = new Swiper(".header-swiper", {
     slidesPerView: 'auto',
     spaceBetween: 10,
-    speed: 3000,
+    speed: 5000,
     breakpoints: {
         100: {
             speed: 5000,
@@ -21,29 +21,49 @@ var swiper1 = new Swiper(".header-swiper", {
     }
 });
 
-var swiperMentors = new Swiper(".mentors__slider", {
-    slidesPerView: 'auto',
-    spaceBetween: 0,
-    speed: 4000,
-    breakpoints: {
-        100: {
-            speed: 5000,
 
-        },
-        769: {
-            speed: 4000,
+if ($(window).width() < 769) {
+    let swiperMentors = new Swiper(".mentors__slider", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        // speed: 5000,
+        loop: true,
+    });
 
+}
+else{
+    let swiperMentors = new Swiper(".mentors__slider", {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        speed: 5000,
+        loop: true,
+        allowTouchMove: true, // можно ещё отключить свайп
+        autoplay: {
+            delay: 0,
+            // pauseOnMouseEnter: true,
+            reverseDirection:false,
+            disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
         }
-    },
-    loop: true,
-    allowTouchMove: true, // можно ещё отключить свайп
-    autoplay: {
-        delay: 0,
-        // pauseOnMouseEnter: true,
-        reverseDirection:false,
-        disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
-    }
-});
+    });
+    swiperMentors.on('slideChange', function () {
+        let nextSlide = swiperMentors.activeIndex + 1;
+        // let nexrinside = nextSlide.firstChild;
+        let nextAfterSlide = swiperMentors.activeIndex + 2;
+        let nextAfterAfterSlide = swiperMentors.activeIndex + 3;
+        let slide = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterSlide);
+        let slide2 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextSlide);
+        let slide3 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterAfterSlide);
+        // let slide1 = $(slide).find('.mentors__slide-block-f');
+        // slide1.attr('data-aos-delay', '1700');
+        // console.log( $(slide).find('.mentors__slide-block-f').attr('data-aos-delay'))
+        $(slide).addClass("show");
+        $(slide2).removeClass("show");
+        $(slide3).addClass("slide3");
+        $(slide2).removeClass("slide3");
+    });
+}
+
+
 
 var swiper2 = new Swiper(".nossos-cursos__slider", {
     spaceBetween: 30,
@@ -113,16 +133,7 @@ if ($(window).width() < 769) {
             $(".curso-functiona__text-block").hide(300);
         }
     });
-
 }
-
-
-// AOS.init({
-//     duration: 1500,
-//     once: true,
-// });
-
-
 
 $(document).ready(function () {
     $(".js-header__link").on("click", "a", function (event) {
@@ -132,6 +143,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
 $(document).ready(function () {
     $(".feedback__btn").on("click", "a", function (event) {
         event.preventDefault();
@@ -141,6 +153,16 @@ $(document).ready(function () {
     });
 });
 
-
-
 $("#spec-input").inputmask("+55 (99) 99999-9999");
+
+AOS.init({
+    // duration: 1500,
+    once: true,
+});
+
+// $(document).ready ( function(){
+//     if ($(".swiper-slide").hasClass('.swiper-slide-next')){
+//         let w = $(this).children('.mentors__slide-cover');
+//         console.log(w);
+//     }
+// });

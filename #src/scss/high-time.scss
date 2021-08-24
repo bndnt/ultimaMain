@@ -1,5 +1,6 @@
 .high-time{
   position: relative;
+  overflow-x: hidden;
   &__container{
     width: 100%;
     max-width: 1440px;
@@ -21,6 +22,17 @@
       height: 140px;
     }
   }
+  &__web{
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__mob{
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
   &__text-block{
     font-style: normal;
     font-weight: normal;
@@ -28,14 +40,14 @@
     line-height: 120%;
     text-align: center;
     //color: #0762d4;
-    color: #0621B5;
+    color: #181818;
     padding-left: 42px;
     @media (max-width: 1250px) {
-      font-size: 38px;
+      font-size: 35px;
       padding-left: 30px;
     }
     @media (max-width: 991px) {
-      font-size: 30px;
+      font-size: 28px;
       padding-left: 30px;
     }
     @media (max-width: 768px) {
@@ -47,34 +59,33 @@
     }
   }
   &__img-bg{
+    img{
+      width: 100%;
+      height: 100%;
+    }
     z-index: -1;
     position: absolute;
-    background-image: url("../img/high-time2.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 220px;
     top:50%;
     left:50%;
-    transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%)!important;
     @media (min-width:1465px){
-      background-size: 100% 100%;
 
     }
     @media (max-width:991px){
-      width: 90%;
-      background-size: 100% 100%;
+
     }
     @media (max-width:768px){
-      background-image: url("../img/high-time3.svg");
       width: 100%;
-      background-size: 100% 100%;
+
     }
     @media (max-width:650px){
-      background-image: url("../img/high-time3.svg");
+      //background-image: url("../img/high-time3.svg");
       width: 100%;
-      background-size: 100% 100%;
-      height: 140px;
+
+      height: 130px;
+      top: 47%;
     }
   }
   .br-mob{

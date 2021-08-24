@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
 
-  &:after {
+  .line-web {
     top: 365px;
     content: '';
     position: absolute;
@@ -22,6 +22,10 @@
     @media (max-width: 768px) {
       display: none;
     }
+  }
+
+  &:after {
+
   }
 
   &__container {
@@ -225,14 +229,14 @@
       position: absolute;
       display: block;
       content: '';
-      width: 28px;
-      height: 28px;
-      background-image: url("../img/cursos-under-title.svg");
+      width: 41px;
+      height: 41px;
+      background-image: url("../img/COMO-O-CURSO-FUNCIONA.svg");
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 2;
       left: -10px;
-      bottom: -26px;
+      bottom: -32px;
 
       @media (max-width: 991px) {
         bottom: -18px;
@@ -243,7 +247,7 @@
       @media (max-width: 768px) {
         width: 28px;
         height: 28px;
-        left: -37px;
+        left: -36px;
         top: 50%;
         transform: translateY(-50%);
       }

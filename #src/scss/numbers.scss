@@ -1,4 +1,5 @@
 .numbers{
+  overflow-x: hidden;
   &__wrapper{
     padding: 60px 0 119px;
     @media (max-width: 1250px){
