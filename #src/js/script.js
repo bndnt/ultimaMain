@@ -1,3 +1,45 @@
+var mainFormProcessing = false,
+    mainFormSent = false;
+
+$('#main-form').submit(function(e) {
+    e.preventDefault();
+
+    if (mainFormProcessing || mainFormSent) return;
+
+    var $form = $(this);
+
+    mainFormProcessing = true;
+
+    $(this).find('button[type="submit"]').prop('disabled', true);
+
+    var data = {
+        name: $('#name1').val(),
+        tel: $('#spec-input').val(),
+        email: $('#name3').val()
+    };
+
+    $.ajax({
+        method: 'post',
+        data: data,
+        url: '/gestao-de-produtos/process.php',
+        success: function() {
+            mainFormSent = true;
+            mainFormProcessing = false;
+
+            $form.find('button[type="submit"]').prop('disabled', false);
+
+            window.location = '/gestao-de-produtos/thanks-page.html';
+        },
+        error: function() {
+            mainFormProcessing = false;
+
+            $form.find('button[type="submit"]').prop('disabled', false);
+
+            alert('Something went wrong :( Try again later.');
+        }
+    });
+});
+
 var swiper1 = new Swiper(".header-swiper", {
     slidesPerView: 'auto',
     spaceBetween: 10,

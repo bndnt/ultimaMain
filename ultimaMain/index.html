@@ -2086,7 +2086,7 @@
                     </div>
                 </div>
                 <div class="principais-recursos__form-block" data-aos="zoom-in" data-aos-duration="600">
-                    <form action="">
+                    <form id="main-form">
                         <div class="principais-recursos__form-title">
                             Ficou alguma dúvida?
                         </div>
@@ -2107,7 +2107,7 @@
                                     </svg>
                                 </div>
                                 <label for="name1"></label>
-                                <input id="name1" type="text" class="principais-recursos__input" placeholder="Nome">
+                                <input id="name1" required type="text" class="principais-recursos__input" placeholder="Nome">
                             </div>
                             <div class="principais-recursos__inputs-block">
                                 <div class="principais-recursos__icon-block">
@@ -2118,7 +2118,7 @@
                                     </svg>
                                 </div>
                                 <label for="spec-input"></label>
-                                <input id="spec-input" type="text" class="principais-recursos__input" placeholder="Telefone">
+                                <input id="spec-input" required type="tel" class="principais-recursos__input" placeholder="Telefone">
                             </div>
                             <div class="principais-recursos__inputs-block">
                                 <div class="principais-recursos__icon-block">
@@ -2129,10 +2129,10 @@
                                     </svg>
                                 </div>
                                 <label for="name3"></label>
-                                <input id="name3" type="text" class="principais-recursos__input" placeholder="Email">
+                                <input id="name3" required type="email" class="principais-recursos__input" placeholder="Email">
                             </div>
                         </div>
-                        <button class="principais-recursos__form-btn">
+                        <button type="submit" class="principais-recursos__form-btn">
                            <span>ENVIAR</span>
                         </button>
                     </form>
@@ -2224,6 +2224,6 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=1"></script>
 </body>
 </html>
