@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfe925a3-e48f-46fc-99c1-e330eb0f4dde" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/#src/_mentors.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_mentors.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultimaMain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
       <workItem from="1629387589134" duration="21266000" />
       <workItem from="1629470486492" duration="5858000" />
       <workItem from="1629483107391" duration="27975000" />
-      <workItem from="1629636554512" duration="58001000" />
+      <workItem from="1629636554512" duration="58606000" />
     </task>
     <servers />
   </component>
