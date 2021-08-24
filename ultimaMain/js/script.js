@@ -21,14 +21,14 @@ $('#main-form').submit(function(e) {
     $.ajax({
         method: 'post',
         data: data,
-        url: '/gestao-de-produtos/process.php',
+        url: '/homepage/process.php',
         success: function() {
             mainFormSent = true;
             mainFormProcessing = false;
 
             $form.find('button[type="submit"]').prop('disabled', false);
 
-            window.location = '/gestao-de-produtos/thanks-page.html';
+            window.location = '/homepage/thanks-page.html';
         },
         error: function() {
             mainFormProcessing = false;
