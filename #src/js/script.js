@@ -26,7 +26,7 @@ if ($(window).width() < 769) {
     let swiperMentors = new Swiper(".mentors__slider", {
         slidesPerView: 'auto',
         spaceBetween: 0,
-        // speed: 5000,
+        speed: 300,
         loop: true,
     });
 

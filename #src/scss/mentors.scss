@@ -352,7 +352,7 @@
   }
 
   &__block-message621 {
-    top: -44px;
+    top: -60px;
     left: 76px;
     border-radius: 15px 15px 15px 2px;
   }
@@ -582,7 +582,7 @@
 
   &__slide-block113 {
     width: 410px;
-    top: 65px;
+    top: 55px;
     left: -22px;
   }
 
@@ -612,51 +612,159 @@
   .mentors__slide-block {
     opacity: 1;
     visibility: visible;
-    @media (max-width: 1024px){
-      opacity: .9;
-    }
-    @media (max-width: 768px){
-      opacity: 1;
-    }
   }
+
 }
+
+.mentors__slide-block{
+  transition: .3s linear;
+}
+
 
 
 .mentors__slide.show {
   .mentors__slide-block {
-    opacity: .8;
+    opacity: 1;
     visibility: visible;
-    @media (max-width: 1024px) {
-      opacity: 0;
-
-    }
+  }
+  .mentors__slide-block-f {
+    animation: slides3-1  18s  ease-in-out!important;
+    animation-iteration-count: 1!important;
+  }
+  .mentors__slide-block-b {
+    animation: slides3-1 18s  ease-in-out!important;
+    animation-iteration-count: 1!important;
+  }
+  .mentors__slide-block-c {
+    animation: slides3-1  22s  ease-in-out!important;
+    animation-iteration-count: 1!important;
   }
 }
 
+@keyframes slides3-1 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  25% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  32% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes slides3-2 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  55% {
+    opacity: 1;
+    visibility: visible;
+  }
+  65% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes slides3-3 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .mentors__slide.slide3 {
   .mentors__slide-block-f {
-    transition: all 15s;
-    @media (max-width: 1250px) {
-      transition: all 3s;
-
-    }
+    animation: slides3-1  28s  ease-in-out!important;
+    animation-iteration-count: 1!important;
   }
-
-  .mentors__slide-block-c {
-    transition: all 20s;
-    @media (max-width: 1250px) {
-      transition: all 7s;
-
-    }
-  }
-
   .mentors__slide-block-b {
-    transition: all 18s;
-    @media (max-width: 1250px) {
-      transition: all 5s;
-    }
+    animation: slides3-1 31s  ease-in-out!important;
+    animation-iteration-count: 1!important;
+  }
+  .mentors__slide-block-c {
+    animation: slides3-1  35s  ease-in-out!important;
+    animation-iteration-count: 1!important;
   }
 }
+@keyframes show1 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  25% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  32% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes show2 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  55% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  65% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes show3 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
 
 .mentors__slide.swiper-slide-prev {
   .mentors__block-message {
@@ -676,14 +784,193 @@
 }
 
 .mentors__slide-block-f {
-  transition: all 3s;
+  //transition: all 3s;
 }
 
 .mentors__slide-block-c {
-  transition: all 7s;
+  //transition: all 7s;
 }
 
 .mentors__slide-block-b {
-  transition: all 5s;
+  //transition: all 5s;
+}
+.mentors__slide-animation11{
+  animation: animation11  3s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation11 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.mentors__slide-animation13{
+  animation: animation13  3s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation13 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  25%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  35%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mentors__slide-animation12{
+  animation: animation12  3s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation12 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  69%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mentors__slide-animation21{
+  animation: animation21  4s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation21 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  45% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  60%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.mentors__slide-animation23{
+  animation: animation23  4s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation23 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  65%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  78%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.mentors__slide-animation31{
+  animation: animation31  6s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation31 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  77%{
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.mentors__slide-animation33{
+  animation: animation33  6s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation33 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  77% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  88% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mentors__slide-animation32{
+  animation: animation32  6s  ease-in-out!important;
+  animation-iteration-count: 1!important;
+}
+@keyframes animation32 {
+  1% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  88% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
