@@ -1044,9 +1044,9 @@ body {
   font-family: 'CodecPro-Bold';
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all .6s;
-  -o-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all 1.8s;
+  -o-transition: all 1.8s;
+  transition: all 1.8s;
 }
 
 .mentors__block-message11 {
@@ -1528,15 +1528,15 @@ body {
 }
 
 .mentors__slide.show .mentors__slide-block-b {
-  -webkit-animation: slides3-1 18s ease-in-out !important;
-          animation: slides3-1 18s ease-in-out !important;
+  -webkit-animation: slides3-1 19s ease-in-out !important;
+          animation: slides3-1 19s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
 
 .mentors__slide.show .mentors__slide-block-c {
-  -webkit-animation: slides3-1 22s ease-in-out !important;
-          animation: slides3-1 22s ease-in-out !important;
+  -webkit-animation: slides3-1 21s ease-in-out !important;
+          animation: slides3-1 21s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
@@ -1674,22 +1674,22 @@ body {
 }
 
 .mentors__slide.slide3 .mentors__slide-block-f {
-  -webkit-animation: slides3-1 28s ease-in-out !important;
-          animation: slides3-1 28s ease-in-out !important;
+  -webkit-animation: slides3-1 25s ease-in-out !important;
+          animation: slides3-1 25s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
 
 .mentors__slide.slide3 .mentors__slide-block-b {
-  -webkit-animation: slides3-1 31s ease-in-out !important;
-          animation: slides3-1 31s ease-in-out !important;
+  -webkit-animation: slides3-1 30s ease-in-out !important;
+          animation: slides3-1 30s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
 
 .mentors__slide.slide3 .mentors__slide-block-c {
-  -webkit-animation: slides3-1 35s ease-in-out !important;
-          animation: slides3-1 35s ease-in-out !important;
+  -webkit-animation: slides3-1 33s ease-in-out !important;
+          animation: slides3-1 33s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
@@ -2087,8 +2087,8 @@ body {
 }
 
 .mentors__slide-animation31 {
-  -webkit-animation: animation31 6s ease-in-out !important;
-          animation: animation31 6s ease-in-out !important;
+  -webkit-animation: animation31 5s ease-in-out !important;
+          animation: animation31 5s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
@@ -2138,8 +2138,8 @@ body {
 }
 
 .mentors__slide-animation33 {
-  -webkit-animation: animation33 6s ease-in-out !important;
-          animation: animation33 6s ease-in-out !important;
+  -webkit-animation: animation33 5s ease-in-out !important;
+          animation: animation33 5s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }

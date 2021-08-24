@@ -144,7 +144,7 @@
     font-family: 'CodecPro-Bold';
     opacity: 0;
     visibility: hidden;
-    transition: all .6s;
+    transition: all 1.8s;
   }
 
   &__block-message11 {
@@ -632,11 +632,11 @@
     animation-iteration-count: 1!important;
   }
   .mentors__slide-block-b {
-    animation: slides3-1 18s  ease-in-out!important;
+    animation: slides3-1 19s  ease-in-out!important;
     animation-iteration-count: 1!important;
   }
   .mentors__slide-block-c {
-    animation: slides3-1  22s  ease-in-out!important;
+    animation: slides3-1  21s  ease-in-out!important;
     animation-iteration-count: 1!important;
   }
 }
@@ -697,15 +697,15 @@
 }
 .mentors__slide.slide3 {
   .mentors__slide-block-f {
-    animation: slides3-1  28s  ease-in-out!important;
+    animation: slides3-1  25s  ease-in-out!important;
     animation-iteration-count: 1!important;
   }
   .mentors__slide-block-b {
-    animation: slides3-1 31s  ease-in-out!important;
+    animation: slides3-1 30s  ease-in-out!important;
     animation-iteration-count: 1!important;
   }
   .mentors__slide-block-c {
-    animation: slides3-1  35s  ease-in-out!important;
+    animation: slides3-1  33s  ease-in-out!important;
     animation-iteration-count: 1!important;
   }
 }
@@ -905,7 +905,7 @@
 
 
 .mentors__slide-animation31{
-  animation: animation31  6s  ease-in-out!important;
+  animation: animation31  5s  ease-in-out!important;
   animation-iteration-count: 1!important;
 }
 @keyframes animation31 {
@@ -927,7 +927,7 @@
   }
 }
 .mentors__slide-animation33{
-  animation: animation33  6s  ease-in-out!important;
+  animation: animation33  5s  ease-in-out!important;
   animation-iteration-count: 1!important;
 }
 @keyframes animation33 {
