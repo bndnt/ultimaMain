@@ -93,12 +93,11 @@ var swiper2 = new Swiper(".nossos-cursos__slider", {
     }
 });
 
-var swiper10 = new Swiper(".principais-recursos__slider", {
+var swiperPR = new Swiper(".principais-recursos__slider", {
     spaceBetween: 10,
     slidesPerView: 1,
     speed: 1000,
     loop: true,
-
     pagination: {
         el: ".swiper-pagination2",
         clickable: true,
