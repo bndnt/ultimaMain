@@ -1,14 +1,14 @@
 var swiper1 = new Swiper(".header-swiper", {
     slidesPerView: 'auto',
     spaceBetween: 10,
-    speed: 5000,
+    // speed: 300,
     breakpoints: {
         100: {
-            speed: 5000,
+            speed: 10000,
 
         },
         769: {
-            speed: 3000,
+            speed: 8000,
 
         }
     },
@@ -30,8 +30,7 @@ if ($(window).width() < 769) {
         loop: true,
     });
 
-}
-else{
+} else {
     let swiperMentors = new Swiper(".mentors__slider", {
         slidesPerView: 'auto',
         spaceBetween: 0,
@@ -41,28 +40,26 @@ else{
         autoplay: {
             delay: 0,
             // pauseOnMouseEnter: true,
-            reverseDirection:false,
+            reverseDirection: false,
             disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
         }
     });
     swiperMentors.on('slideChange', function () {
         let nextSlide = swiperMentors.activeIndex + 1;
+        let slideNoClass = $('.mentors__slider .swiper-wrapper').find('.swiper-slide');
         // let nexrinside = nextSlide.firstChild;
         let nextAfterSlide = swiperMentors.activeIndex + 2;
         let nextAfterAfterSlide = swiperMentors.activeIndex + 3;
         let slide = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterSlide);
         let slide2 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextSlide);
         let slide3 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterAfterSlide);
-        // let slide1 = $(slide).find('.mentors__slide-block-f');
-        // slide1.attr('data-aos-delay', '1700');
-        // console.log( $(slide).find('.mentors__slide-block-f').attr('data-aos-delay'))
         $(slide).addClass("show");
         $(slide2).removeClass("show");
         $(slide3).addClass("slide3");
         $(slide2).removeClass("slide3");
+
     });
 }
-
 
 
 var swiper2 = new Swiper(".nossos-cursos__slider", {

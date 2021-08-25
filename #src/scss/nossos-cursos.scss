@@ -185,7 +185,7 @@
   &__slider-nav{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center!important;
     margin-top: 101px;
     padding-right: 122px;
     @media (max-width: 1200px){
@@ -200,9 +200,11 @@
       margin-top: 71px;
     }
     .swiper-pagination{
-      position: relative!important;
+      position: static!important;
       display: flex;
       align-items: center;
+      height: 30px;
+      width: initial;
     }
     .swiper-pagination-bullet {
       width: 10px!important;

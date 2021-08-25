@@ -167,9 +167,11 @@
   }
 
   .swiper-pagination {
-    position: relative !important;
+    position: static!important;
     display: flex;
     align-items: center;
+    width: initial;
+    height: 30px;
   }
 
   .swiper-pagination-bullet {
