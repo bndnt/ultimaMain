@@ -239,6 +239,14 @@ select {
 }
 
 @font-face {
+  font-family: "Gilroy-Medium";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Gilroy-Regular";
   font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
@@ -263,9 +271,25 @@ select {
 }
 
 @font-face {
+  font-family: "Gilroy-UltraLight";
+  font-display: swap;
+  src: url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "PTRootUI-Bold";
   font-display: swap;
   src: url("../fonts/PTRootUI-Bold.woff") format("woff"), url("../fonts/PTRootUI-Bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTRootUI-Light";
+  font-display: swap;
+  src: url("../fonts/PTRootUI-Light.woff") format("woff"), url("../fonts/PTRootUI-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -282,30 +306,6 @@ select {
   font-family: "PTRootUI-Regular";
   font-display: swap;
   src: url("../fonts/PTRootUI-Regular.woff") format("woff"), url("../fonts/PTRootUI-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-UltraLight";
-  font-display: swap;
-  src: url("../fonts/Gilroy-UltraLight.woff") format("woff"), url("../fonts/Gilroy-UltraLight.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PTRootUI-Light";
-  font-display: swap;
-  src: url("../fonts/PTRootUI-Light.woff") format("woff"), url("../fonts/PTRootUI-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -1046,6 +1046,9 @@ body {
   font-family: 'CodecPro-Bold';
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 1.8s;
+  -o-transition: all 1.8s;
+  transition: all 1.8s;
 }
 
 .mentors__block-message11 {
@@ -1493,19 +1496,48 @@ body {
   left: 74px;
 }
 
-.mentors__slide.swiper-slide-active .mentors__block-message {
+.mentors__block-message {
   opacity: 1;
   visibility: visible;
 }
 
-.mentors__slide.swiper-slide-active .mentors__slide-block {
-  opacity: 1;
-  visibility: visible;
+.mentors-one-animation .mentors__block-message {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.mentors__slide.swiper-slide-next .mentors__slide-block {
-  opacity: 1 !important;
-  visibility: visible !important;
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__block-message {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-c .mentors__block-message {
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-f .mentors__block-message {
+  -webkit-transition-delay: .9s;
+       -o-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-b .mentors__block-message {
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mentors__slide-block {
@@ -1517,27 +1549,50 @@ body {
 .mentors__slide.show .mentors__slide-block {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .mentors__slide.show .mentors__slide-block-f {
-  -webkit-animation: slides3-1 12s ease-in-out !important;
-          animation: slides3-1 12s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .mentors__slide.show .mentors__slide-block-b {
-  -webkit-animation: slides3-1 17s ease-in-out !important;
-          animation: slides3-1 17s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .6s;
+       -o-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 .mentors__slide.show .mentors__slide-block-c {
-  -webkit-animation: slides3-1 14s ease-in-out !important;
-          animation: slides3-1 14s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .9s;
+       -o-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-f {
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-b {
+  -webkit-transition: .5s linear;
+  -o-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-c {
+  -webkit-transition: .7s linear;
+  -o-transition: .7s linear;
+  transition: .7s linear;
 }
 
 @-webkit-keyframes slides3-1 {
@@ -1673,22 +1728,22 @@ body {
 }
 
 .mentors__slide.slide3 .mentors__slide-block-f {
-  -webkit-animation: slides3-1 23s ease-in-out !important;
-          animation: slides3-1 23s ease-in-out !important;
+  -webkit-animation: slides3-1 25s ease-in-out !important;
+          animation: slides3-1 25s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
 
 .mentors__slide.slide3 .mentors__slide-block-b {
-  -webkit-animation: slides3-1 29s ease-in-out !important;
-          animation: slides3-1 29s ease-in-out !important;
+  -webkit-animation: slides3-1 30s ease-in-out !important;
+          animation: slides3-1 30s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
 
 .mentors__slide.slide3 .mentors__slide-block-c {
-  -webkit-animation: slides3-1 25s ease-in-out !important;
-          animation: slides3-1 25s ease-in-out !important;
+  -webkit-animation: slides3-1 33s ease-in-out !important;
+          animation: slides3-1 33s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
@@ -1838,6 +1893,9 @@ body {
 .mentors__slide-block {
   opacity: 0;
   visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .mentors__slide-animation11 {
@@ -2086,8 +2144,8 @@ body {
 }
 
 .mentors__slide-animation31 {
-  -webkit-animation: animation33 5s ease-in-out !important;
-          animation: animation33 5s ease-in-out !important;
+  -webkit-animation: animation31 5s ease-in-out !important;
+          animation: animation31 5s ease-in-out !important;
   -webkit-animation-iteration-count: 1 !important;
           animation-iteration-count: 1 !important;
 }
@@ -2236,48 +2294,6 @@ body {
     opacity: 1;
     visibility: visible;
   }
-}
-
-@-webkit-keyframes ordinary {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-@keyframes ordinary {
-  from {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-.mentors__slide-block-f .mentors__block-message {
-  -webkit-transition: .9s;
-  -o-transition: .9s;
-  transition: .9s;
-}
-
-.mentors__slide-block-b .mentors__block-message {
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-}
-
-.mentors__slide-block-c .mentors__block-message {
-  -webkit-transition: 7s;
-  -o-transition: 7s;
-  transition: 7s;
 }
 
 .feedback {
