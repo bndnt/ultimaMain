@@ -21,14 +21,14 @@ $('#main-form').submit(function(e) {
     $.ajax({
         method: 'post',
         data: data,
-        url: '/homepage/process.php',
+        url: '/process.php',
         success: function() {
             mainFormSent = true;
             mainFormProcessing = false;
 
             $form.find('button[type="submit"]').prop('disabled', false);
 
-            window.location = '/homepage/thanks-page.html';
+            window.location = '/thanks-page.html';
         },
         error: function() {
             mainFormProcessing = false;
@@ -43,14 +43,14 @@ $('#main-form').submit(function(e) {
 var swiper1 = new Swiper(".header-swiper", {
     slidesPerView: 'auto',
     spaceBetween: 10,
-    speed: 5000,
+    // speed: 300,
     breakpoints: {
         100: {
-            speed: 5000,
+            speed: 10000,
 
         },
         769: {
-            speed: 3000,
+            speed: 8000,
 
         }
     },
@@ -72,8 +72,7 @@ if ($(window).width() < 769) {
         loop: true,
     });
 
-}
-else{
+} else {
     let swiperMentors = new Swiper(".mentors__slider", {
         slidesPerView: 'auto',
         spaceBetween: 0,
@@ -83,35 +82,59 @@ else{
         autoplay: {
             delay: 0,
             // pauseOnMouseEnter: true,
-            reverseDirection:false,
+            reverseDirection: false,
             disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
         }
     });
     swiperMentors.on('slideChange', function () {
         let nextSlide = swiperMentors.activeIndex + 1;
+        let slideNoClass = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation');
         // let nexrinside = nextSlide.firstChild;
         let nextAfterSlide = swiperMentors.activeIndex + 2;
         let nextAfterAfterSlide = swiperMentors.activeIndex + 3;
-        let slide = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterSlide);
-        let slide2 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextSlide);
-        let slide3 = $('.mentors__slider .swiper-wrapper').find('.swiper-slide').get(nextAfterAfterSlide);
-        // let slide1 = $(slide).find('.mentors__slide-block-f');
-        // slide1.attr('data-aos-delay', '1700');
-        // console.log( $(slide).find('.mentors__slide-block-f').attr('data-aos-delay'))
-        $(slide).addClass("show");
-        $(slide2).removeClass("show");
-        $(slide3).addClass("slide3");
-        $(slide2).removeClass("slide3");
+        let activeSlide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(swiperMentors.activeIndex)
+        let slide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterSlide);
+        let slide2 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextSlide);
+        let slide3 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterAfterSlide);
+        $(slide2).addClass("show");
+        // $(slide2).removeClass("show");
+        // $(slide3).addClass("show");
+        // $(slide2).removeClass("slide3");
+       if ($('.mentors__slide7').hasClass('swiper-slide-active')) {
+           // console.log( $('.swiper-slide').find('.mentors__slide-block'))
+           $('.swiper-slide-duplicate').addClass('show');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation11');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation12');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation13');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation21');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation22');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation23');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation31');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation32');
+           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation33');
+           // $('.swiper-slide').removeClass('mentors-one-animation');
+       }
+      else  if ($('.mentors__slide11').hasClass('swiper-slide-active')) {
+            $('.swiper-slide').removeClass('mentors-one-animation');
+           $('.swiper-slide').addClass('show');
+        }
+      // else  if ($('.mentors__slide11').hasClass('swiper-slide-prev')) {
+      //       $('.swiper-slide-prev').removeClass('mentors-one-animation');
+      //      $('.swiper-slide-prev').addClass('show');
+      //   }
+      // else if ($('.mentors__slide').hasClass('swiper-slide-prev')) {
+      //      $('.swiper-slide-prev').removeClass('mentors-one-animation');
+      //      $('.swiper-slide-prev').addClass('show');
+      //  }
     });
 }
-
 
 
 var swiper2 = new Swiper(".nossos-cursos__slider", {
     spaceBetween: 30,
     slidesPerView: 'auto',
     allowTouchMove: 'false',
-    loop: true,
+    // loop: true,
     speed: 1000,
     pagination: {
         el: ".swiper-pagination1",
@@ -135,12 +158,11 @@ var swiper2 = new Swiper(".nossos-cursos__slider", {
     }
 });
 
-var swiper10 = new Swiper(".principais-recursos__slider", {
+var swiperPR = new Swiper(".principais-recursos__slider", {
     spaceBetween: 10,
     slidesPerView: 1,
     speed: 1000,
-    loop: true,
-
+    // loop: true,
     pagination: {
         el: ".swiper-pagination2",
         clickable: true,

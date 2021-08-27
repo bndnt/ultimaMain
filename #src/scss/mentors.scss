@@ -594,12 +594,45 @@
   }
 
 }
+ .mentors__block-message {
+  opacity: 1;
+  visibility: visible;
 
+}
 
-.mentors__slide.swiper-slide-active {
+.mentors-one-animation .mentors__block-message {
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s linear;
+}
+
+//.mentors__slide.swiper-slide-active.show {
+//  .mentors__block-message {
+//    opacity: 1!important;
+//    visibility: visible!important;
+//    transition: .3s linear!important;
+//  }
+//
+//
+//  //.mentors__slide-block {
+//  //  opacity: 1;
+//  //  visibility: visible;
+//  //}
+//}
+.mentors__slide.mentors-one-animation.swiper-slide-active {
   .mentors__block-message {
     opacity: 1;
     visibility: visible;
+    transition: .3s linear;
+  }
+  .mentors__slide-block-c .mentors__block-message{
+    transition-delay: .3s;
+  }
+  .mentors__slide-block-f .mentors__block-message{
+    transition-delay: .9s;
+  }
+  .mentors__slide-block-b .mentors__block-message{
+    transition-delay: 1.3s;
   }
 
   .mentors__slide-block {
@@ -608,36 +641,48 @@
   }
 }
 
-.mentors__slide.swiper-slide-next {
-  .mentors__slide-block {
-    opacity: 1;
-    visibility: visible;
-  }
-
-}
+//.mentors__slide.swiper-slide-next {
+//  .mentors__slide-block {
+//    opacity: 1;
+//    visibility: visible;
+//  }
+//
+//}
 
 .mentors__slide-block{
   transition: .3s linear;
 }
 
-
-
 .mentors__slide.show {
+  .mentors__slide-block {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  .mentors__slide-block-f {
+    transition-delay: .3s;
+  }
+  .mentors__slide-block-b {
+    transition-delay: .6s;
+  }
+  .mentors__slide-block-c {
+    transition-delay: .9s;
+  }
+}
+
+.mentors__slide.show.swiper-slider-next {
   .mentors__slide-block {
     opacity: 1;
     visibility: visible;
   }
   .mentors__slide-block-f {
-    animation: slides3-1  18s  ease-in-out!important;
-    animation-iteration-count: 1!important;
+    transition: .3s linear;
   }
   .mentors__slide-block-b {
-    animation: slides3-1 19s  ease-in-out!important;
-    animation-iteration-count: 1!important;
+    transition: .5s linear;
   }
   .mentors__slide-block-c {
-    animation: slides3-1  21s  ease-in-out!important;
-    animation-iteration-count: 1!important;
+    transition: .7s linear;
   }
 }
 
@@ -772,6 +817,7 @@
     visibility: visible;
   }
 
+
   .mentors__slide-block {
     opacity: 1 !important;
     visibility: visible !important;
@@ -781,6 +827,7 @@
 .mentors__slide-block {
   opacity: 0;
   visibility: visible;
+  transition: .3s linear;
 }
 
 .mentors__slide-block-f {
@@ -973,4 +1020,3 @@
     visibility: visible;
   }
 }
-

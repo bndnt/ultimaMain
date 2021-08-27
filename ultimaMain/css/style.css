@@ -842,21 +842,23 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   margin-top: 101px;
   padding-right: 122px;
 }
 
 .nossos-cursos__slider-nav .swiper-pagination {
-  position: relative !important;
+  position: static !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 30px;
+  width: initial;
 }
 
 .nossos-cursos__slider-nav .swiper-pagination-bullet {
@@ -1494,17 +1496,46 @@ body {
   left: 74px;
 }
 
-.mentors__slide.swiper-slide-active .mentors__block-message {
+.mentors__block-message {
   opacity: 1;
   visibility: visible;
 }
 
-.mentors__slide.swiper-slide-active .mentors__slide-block {
-  opacity: 1;
-  visibility: visible;
+.mentors-one-animation .mentors__block-message {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.mentors__slide.swiper-slide-next .mentors__slide-block {
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__block-message {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-c .mentors__block-message {
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-f .mentors__block-message {
+  -webkit-transition-delay: .9s;
+       -o-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block-b .mentors__block-message {
+  -webkit-transition-delay: 1.3s;
+       -o-transition-delay: 1.3s;
+          transition-delay: 1.3s;
+}
+
+.mentors__slide.mentors-one-animation.swiper-slide-active .mentors__slide-block {
   opacity: 1;
   visibility: visible;
 }
@@ -1518,27 +1549,50 @@ body {
 .mentors__slide.show .mentors__slide-block {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .mentors__slide.show .mentors__slide-block-f {
-  -webkit-animation: slides3-1 18s ease-in-out !important;
-          animation: slides3-1 18s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .3s;
+       -o-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .mentors__slide.show .mentors__slide-block-b {
-  -webkit-animation: slides3-1 19s ease-in-out !important;
-          animation: slides3-1 19s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .6s;
+       -o-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 .mentors__slide.show .mentors__slide-block-c {
-  -webkit-animation: slides3-1 21s ease-in-out !important;
-          animation: slides3-1 21s ease-in-out !important;
-  -webkit-animation-iteration-count: 1 !important;
-          animation-iteration-count: 1 !important;
+  -webkit-transition-delay: .9s;
+       -o-transition-delay: .9s;
+          transition-delay: .9s;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-f {
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-b {
+  -webkit-transition: .5s linear;
+  -o-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.mentors__slide.show.swiper-slider-next .mentors__slide-block-c {
+  -webkit-transition: .7s linear;
+  -o-transition: .7s linear;
+  transition: .7s linear;
 }
 
 @-webkit-keyframes slides3-1 {
@@ -1839,6 +1893,9 @@ body {
 .mentors__slide-block {
   opacity: 0;
   visibility: visible;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .mentors__slide-animation11 {
@@ -2642,6 +2699,7 @@ body {
 .principais-recursos__slider {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .principais-recursos__slide {
@@ -2707,13 +2765,15 @@ body {
 }
 
 .principais-recursos .swiper-pagination {
-  position: relative !important;
+  position: static !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: initial;
+  height: 30px;
 }
 
 .principais-recursos .swiper-pagination-bullet {
