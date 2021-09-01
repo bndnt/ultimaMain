@@ -64,70 +64,53 @@ var swiper1 = new Swiper(".header-swiper", {
 });
 
 
-if ($(window).width() < 769) {
-    let swiperMentors = new Swiper(".mentors__slider", {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        speed: 300,
-        loop: true,
-    });
-
-} else {
-    let swiperMentors = new Swiper(".mentors__slider", {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        speed: 5000,
-        loop: true,
-        allowTouchMove: true, // можно ещё отключить свайп
-        autoplay: {
-            delay: 0,
-            // pauseOnMouseEnter: true,
-            reverseDirection: false,
-            disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
-        }
-    });
-    swiperMentors.on('slideChange', function () {
-        let nextSlide = swiperMentors.activeIndex + 1;
-        let slideNoClass = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation');
-        // let nexrinside = nextSlide.firstChild;
-        let nextAfterSlide = swiperMentors.activeIndex + 2;
-        let nextAfterAfterSlide = swiperMentors.activeIndex + 3;
-        let activeSlide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(swiperMentors.activeIndex)
-        let slide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterSlide);
-        let slide2 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextSlide);
-        let slide3 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterAfterSlide);
-        $(slide2).addClass("show");
-        // $(slide2).removeClass("show");
-        // $(slide3).addClass("show");
-        // $(slide2).removeClass("slide3");
-       if ($('.mentors__slide7').hasClass('swiper-slide-active')) {
-           // console.log( $('.swiper-slide').find('.mentors__slide-block'))
-           $('.swiper-slide-duplicate').addClass('show');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation11');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation12');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation13');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation21');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation22');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation23');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation31');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation32');
-           $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation33');
-           // $('.swiper-slide').removeClass('mentors-one-animation');
-       }
-      else  if ($('.mentors__slide11').hasClass('swiper-slide-active')) {
-            $('.swiper-slide').removeClass('mentors-one-animation');
-           $('.swiper-slide').addClass('show');
-        }
-      // else  if ($('.mentors__slide11').hasClass('swiper-slide-prev')) {
-      //       $('.swiper-slide-prev').removeClass('mentors-one-animation');
-      //      $('.swiper-slide-prev').addClass('show');
-      //   }
-      // else if ($('.mentors__slide').hasClass('swiper-slide-prev')) {
-      //      $('.swiper-slide-prev').removeClass('mentors-one-animation');
-      //      $('.swiper-slide-prev').addClass('show');
-      //  }
-    });
-}
+let swiperMentors = new Swiper(".mentors__slider", {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    speed: 5000,
+    loop: true,
+    allowTouchMove: true, // можно ещё отключить свайп
+    autoplay: {
+        delay: 0,
+        // pauseOnMouseEnter: true,
+        reverseDirection: false,
+        disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+    }
+});
+// swiperMentors.on('slideChange', function () {
+//     let nextSlide = swiperMentors.activeIndex + 1;
+//     let slideNoClass = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation');
+//     // let nexrinside = nextSlide.firstChild;
+//     let nextAfterSlide = swiperMentors.activeIndex + 2;
+//     let nextAfterAfterSlide = swiperMentors.activeIndex + 3;
+//     let activeSlide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(swiperMentors.activeIndex)
+//     let slide = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterSlide);
+//     let slide2 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextSlide);
+//     let slide3 = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation').get(nextAfterAfterSlide);
+//     $(slide2).addClass("show");
+//     // $(slide2).removeClass("show");
+//     // $(slide3).addClass("show");
+//     // $(slide2).removeClass("slide3");
+//    if ($('.mentors__slide7').hasClass('swiper-slide-active')) {
+//        // console.log( $('.swiper-slide').find('.mentors__slide-block'))
+//        $('.swiper-slide-duplicate').addClass('show');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation11');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation12');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation13');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation21');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation22');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation23');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation31');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation32');
+//        $('.swiper-slide').find('.mentors__slide-block').removeClass('mentors__slide-animation33');
+//        // $('.swiper-slide').removeClass('mentors-one-animation');
+//    }
+//   else  if ($('.mentors__slide11').hasClass('swiper-slide-active')) {
+//         $('.swiper-slide').removeClass('mentors-one-animation');
+//        $('.swiper-slide').addClass('show');
+//     }
+//
+// });
 
 
 var swiper2 = new Swiper(".nossos-cursos__slider", {
