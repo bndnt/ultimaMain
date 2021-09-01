@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfe925a3-e48f-46fc-99c1-e330eb0f4dde" name="Default Changelist" comment="ad">
+      <change beforePath="$PROJECT_DIR$/#src/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/#src/scss/mentors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/mentors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaMain/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaMain/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultimaMain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ultimaMain/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ultimaMain/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/js/script.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,9 @@
       <workItem from="1629636554512" duration="61533000" />
       <workItem from="1629895851316" duration="6216000" />
       <workItem from="1629908750923" duration="17410000" />
-      <workItem from="1629996357054" duration="783000" />
+      <workItem from="1629996357054" duration="1348000" />
+      <workItem from="1630082638857" duration="580000" />
+      <workItem from="1630505876394" duration="97000" />
     </task>
     <servers />
   </component>
