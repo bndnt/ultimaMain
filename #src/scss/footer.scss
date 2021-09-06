@@ -90,6 +90,7 @@
       margin-bottom: 18px;
       &:nth-child(2) {
         margin-bottom: 0;
+        margin-left: 0 !important;
       }
       &:last-child {
         display: none;
@@ -145,6 +146,7 @@
   }
 
   &__links-soc {
+    flex-direction: column;
     &  > a {
       display: block;
       margin-bottom: 19px;

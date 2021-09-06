@@ -5151,6 +5151,7 @@ body {
 
 .footer__flex span:nth-child(2) {
   margin-bottom: 0;
+  margin-left: 0 !important;
 }
 
 .footer__flex span:last-child {
@@ -5178,6 +5179,13 @@ body {
 
 .footer__flex a:hover {
   color: #167FB9;
+}
+
+.footer__links-soc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer__links-soc > a {
