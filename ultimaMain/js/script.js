@@ -35,6 +35,7 @@ let swiperMentors = new Swiper(".mentors__slider", {
         disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
     }
 });
+
 // swiperMentors.on('slideChange', function () {
 //     let nextSlide = swiperMentors.activeIndex + 1;
 //     let slideNoClass = $('.mentors__slider .swiper-wrapper').find('.mentors-one-animation');
