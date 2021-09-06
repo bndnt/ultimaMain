@@ -114,33 +114,23 @@ let swiperMentors = new Swiper(".mentors__slider", {
 // });
 
 
-var swiper2 = new Swiper(".nossos-cursos__slider", {
-    spaceBetween: 30,
-    slidesPerView: 'auto',
-    allowTouchMove: 'false',
-    // loop: true,
-    speed: 1000,
-    pagination: {
-        el: ".swiper-pagination1",
-        // clickable: true,
-    },
-    navigation: {
-        nextEl: ".nossos-cursos__next",
-        prevEl: ".nossos-cursos__prev",
-    },
-    breakpoints: {
-        100: {
-            spaceBetween: 26,
-            allowTouchMove: 'false',
+if($(window).width() < 998){
+    var swiper2 = new Swiper(".js-nossos-cursos-formacao-slider", {
+        spaceBetween: 30,
+        slidesPerView: 'auto',
+        allowTouchMove: 'false',
+        // loop: true,
+        speed: 1000,
+    });
 
-        },
-        769: {
-            spaceBetween: 30,
-            allowTouchMove: 'false',
+    var swiper2 = new Swiper(".js-nossos-cursos-block-slider", {
+        // spaceBetween: 15,
+        slidesPerView: 'auto',
+        // loop: true,
+        speed: 1000,
 
-        }
-    }
-});
+    });
+}
 
 var swiperPR = new Swiper(".principais-recursos__slider", {
     spaceBetween: 10,
@@ -157,16 +147,20 @@ var swiperPR = new Swiper(".principais-recursos__slider", {
     },
 });
 
-
-if ($(window).width() < 992) {
-    var swiper = new Swiper(".feedback__flex-slider", {
-        slidesPerView: 'auto',
-        // spaceBetween: 0,
-        mousewheel: true,
-        keyboard: true,
-        speed: 1000,
-    });
-}
+var swiper = new Swiper(".feedback__flex-slider", {
+    slidesPerView: 'auto',
+    // spaceBetween: 0,
+    keyboard: true,
+    speed: 1000,
+    pagination: {
+        el: ".feedback__flex-slider-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".feedback__flex-slider-next",
+        prevEl: ".feedback__flex-slider-prev",
+    },
+});
 
 if ($(window).width() < 769) {
     $(document).on('click', '.curso-functiona__titles-block', function (e) {

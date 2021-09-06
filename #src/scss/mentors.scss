@@ -6,20 +6,29 @@
   }
 
   &__wrapper {
-    padding: 51px 0 63px;
+    padding: 38px 0 63px;
     @media (max-width: 650px) {
-      padding: 19px 0 16px;
+      padding: 53px 0 16px;
     }
   }
 
   &__title {
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 50px;
     line-height: 144%;
+    font-family: 'sk-modernist-bold';
+    letter-spacing: -.5px;
     color: #000000;
-    width: calc(100% - 204px);
+    width:100%;
+    max-width: 1285px;
+    padding: 0 35px;
     margin: 0 auto;
+    span {
+      width: 100%;
+      display: block;
+      max-width: 950px;
+    }
     @media (max-width: 1100px) {
       width: 100%;
       padding: 0 35px;
@@ -27,11 +36,15 @@
     @media (max-width: 650px) {
       font-style: normal;
       font-weight: normal;
-      font-size: 40px;
-      line-height: 125%;
+      font-size: 36px;
+      line-height: 50px;
       /* or 125% */
       color: #000000;
-      padding: 0 27px;
+      padding: 0 7px;
+      padding-bottom: 37px;
+      span {
+        max-width: 362px;
+      }
     }
   }
 

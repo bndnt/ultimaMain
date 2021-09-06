@@ -191,9 +191,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Black";
+  font-family: "CodecPro-News";
   font-display: swap;
-  src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
+  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -207,22 +207,6 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Bold";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "CodecPro-News";
-  font-display: swap;
-  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Gilroy-Heavy";
   font-display: swap;
   src: url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.woff2") format("woff2");
@@ -231,17 +215,25 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Light";
   font-display: swap;
-  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
+  font-family: "Gilroy-Medium";
   font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -258,6 +250,14 @@ select {
   font-family: "Gilroy-Thin";
   font-display: swap;
   src: url("../fonts/Gilroy-Thin.woff") format("woff"), url("../fonts/Gilroy-Thin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Black.woff") format("woff"), url("../fonts/Gilroy-Black.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -303,9 +303,17 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Medium";
+  font-family: "sk-modernist-bold";
   font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+  src: url("../fonts/sk-modernist-bold.woff") format("woff"), url("../fonts/sk-modernist-bold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -620,7 +628,7 @@ body {
 }
 
 .numbers__wrapper {
-  padding: 60px 0 119px;
+  padding: 60px 0 73px;
 }
 
 .numbers__container {
@@ -639,14 +647,13 @@ body {
 }
 
 .numbers__flex {
-  margin-top: 79px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 60px 0 50px;
+  padding: 0 39px 0 50px;
 }
 
 .numbers__block:first-child {
@@ -682,239 +689,366 @@ body {
 }
 
 .nossos-cursos {
-  overflow-x: hidden;
-}
-
-.nossos-cursos__container {
-  margin-left: calc((100vw - 1236px)/2);
+  overflow: hidden;
 }
 
 .nossos-cursos__wrapper {
-  padding: 88px 0 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .nossos-cursos__title {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 60px;
   line-height: 110%;
-  color: #000000;
+  font-family: 'sk-modernist-bold';
+  margin-bottom: 37px;
+  max-width: 295px;
+  margin-top: 10px;
 }
 
-.nossos-cursos__slider {
-  margin-top: 86px;
+.nossos-cursos__text {
+  max-width: 295px;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: -0.011em;
+  color: #333333;
+}
+
+.nossos-cursos__right {
+  position: relative;
+  left: 91px;
   width: 100%;
-  height: 341px;
-  padding-right: 15px;
+  max-width: 900px;
 }
 
-.nossos-cursos__slider .swiper-slide {
-  width: 349px;
-  height: 100%;
+.nossos-cursos-formacao__title {
+  font-style: normal;
+  font-weight: bold;
+  font-family: sk-modernist-bold;
+  font-size: 40px;
+  line-height: 150%;
+  color: #030303;
+  margin-bottom: 10px;
 }
 
-.nossos-cursos__slide {
-  border: 0.5px solid #000000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.nossos-cursos-formacao-slider {
+  overflow: initial;
+}
+
+.nossos-cursos-formacao-item {
+  background: #FFFFFF;
   border-radius: 20px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 24px 19px 24px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow: hidden;
+  padding: 24px;
+  width: 277px;
+  height: 271px;
+  -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-.nossos-cursos__slide-first {
-  background-image: url("../img/nossos-cursos__slide-bg1.png");
+.nossos-cursos-formacao-item.circle {
+  margin-right: 20px;
 }
 
-.nossos-cursos__slide-second {
-  background-image: url("../img/nossos-cursos__slide-bg2.png");
+.nossos-cursos-formacao-item.circle:before {
+  content: '';
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #8BBFFF;
+  position: absolute;
+  bottom: -78px;
+  right: -60px;
+  z-index: 1;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.nossos-cursos__slide-third {
-  background-image: url("../img/nossos-cursos__slide-bg3.png");
+.nossos-cursos-formacao-item.circle:hover:before {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
 }
 
-.nossos-cursos__slide-fourth {
-  background-image: url("../img/nossos-cursos__slide-bg4.png");
+.nossos-cursos-formacao-item.square:before {
+  content: '';
+  width: 190px;
+  height: 190px;
+  background: #FF8F72;
+  border-radius: 20px;
+  -webkit-transform: rotate(-22.9deg);
+      -ms-transform: rotate(-22.9deg);
+          transform: rotate(-22.9deg);
+  position: absolute;
+  bottom: -63px;
+  right: -65px;
+  z-index: 1;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
-.nossos-cursos__slide-fiveth {
-  background-image: url("../img/nossos-cursos__slide-bg5.png");
+.nossos-cursos-formacao-item.square:hover:before {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  -webkit-transform: initial;
+      -ms-transform: initial;
+          transform: initial;
 }
 
-.nossos-cursos__slide-title {
-  font-style: normal;
-  font-size: 50px;
-  line-height: 120%;
-  color: #000000;
-  font-family: 'CodecPro-Bold';
+.nossos-cursos-formacao-item__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  font-family: "CodecPro-Bold";
+  position: relative;
+  z-index: 2;
 }
 
-.nossos-cursos__slide-title-small {
-  font-family: 'CodecPro-Bold';
-  font-style: normal;
+.nossos-cursos-formacao-item__title {
+  margin-top: 18px;
+  margin-bottom: 35px;
+  font-weight: normal;
   font-size: 40px;
   line-height: 120%;
-  color: #000000;
+  color: #000;
+  font-family: "CodecPro-Bold";
+  position: relative;
+  z-index: 2;
 }
 
-.nossos-cursos__slide-bottom {
+.nossos-cursos-formacao-item__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 2;
 }
 
-.nossos-cursos__slide-duration {
-  background: #000000;
-  border-radius: 20px;
-  padding: 2px 14px 0;
-  font-style: normal;
+.nossos-cursos-formacao-item__tag {
   font-weight: normal;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 150%;
-  color: #FFFFFF;
+  height: 26px;
+  background: #000000;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.nossos-cursos__slide-btn {
-  margin-right: 5px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
+.nossos-cursos-formacao-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
   position: relative;
   top: 0;
 }
 
-.nossos-cursos__slide-btn:hover {
+.nossos-cursos-formacao-item__link:hover {
   top: -7px;
 }
 
-.nossos-cursos__slide-btn a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nossos-cursos__slide-span-text {
-  display: block;
-  font-style: normal;
+.nossos-cursos-formacao-item__link span {
   font-weight: normal;
   font-size: 40px;
   line-height: 120%;
-  color: #000000;
+  color: #000;
   margin-right: 10px;
 }
 
-.nossos-cursos__slide-span-arrow {
-  display: block;
-  width: 21px;
-  height: 21px;
+.nossos-cursos-formacao-item__link svg {
+  width: 20px;
+  height: 20px;
 }
 
-.nossos-cursos__slide-span-arrow svg {
-  width: 100%;
-  height: 100%;
+.nossos-cursos-block {
+  margin-top: 23px;
+  margin-bottom: 93px;
 }
 
-.nossos-cursos__slider-nav {
+.nossos-cursos-block__title {
+  font-style: normal;
+  font-weight: bold;
+  font-family: sk-modernist-bold;
+  font-size: 40px;
+  line-height: 150%;
+  color: #030303;
+  margin-bottom: 10px;
+}
+
+.nossos-cursos-block .swiper-wrapper {
+  margin: 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  margin-top: 101px;
-  padding-right: 122px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.nossos-cursos__slider-nav .swiper-pagination {
-  position: static !important;
+.nossos-cursos-block-item {
+  background: rgba(226, 243, 255, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 24px;
+  padding-right: 16px;
+  width: 277px;
+  height: 271px;
+  position: relative;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.nossos-cursos-block-item.four {
+  display: none;
+}
+
+.nossos-cursos-block-item:hover {
+  background: rgba(163, 216, 255, 0.5);
+}
+
+.nossos-cursos-block-item__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  font-family: "CodecPro-Bold";
+}
+
+.nossos-cursos-block-item__title {
+  margin-top: 18px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 120%;
+  color: #000;
+  font-family: "CodecPro-Bold";
+  height: 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30px;
-  width: initial;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.nossos-cursos__slider-nav .swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: #C4C4C4;
-  opacity: 1;
+.nossos-cursos-block-item__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nossos-cursos-block-item__tag {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  height: 26px;
+  background: #000000;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nossos-cursos-block-item__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transition: .4s all;
+  -o-transition: .4s all;
+  transition: .4s all;
+  position: relative;
+  top: 0;
+  padding-right: 10px;
+}
+
+.nossos-cursos-block-item__link:hover {
+  top: -7px;
+}
+
+.nossos-cursos-block-item__link span {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000;
   margin-right: 10px;
 }
 
-.nossos-cursos__slider-nav .swiper-pagination-bullet:last-child {
-  margin-right: 0;
-}
-
-.nossos-cursos__slider-nav .swiper-pagination-bullet-active {
-  position: relative !important;
-  background-color: black;
-  display: block;
-}
-
-.nossos-cursos__slider-nav .swiper-pagination-bullet-active:before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-image: url("../img/slider-shadow-pagination.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  z-index: -1;
-}
-
-.nossos-cursos__arrow {
-  width: 33px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.nossos-cursos__arrow svg {
-  width: 100%;
-  height: 100%;
-}
-
-.nossos-cursos__prev {
-  margin-right: 40px;
-}
-
-.nossos-cursos__next {
-  margin-left: 40px;
+.nossos-cursos-block-item__link svg {
+  width: 20px;
+  height: 20px;
 }
 
 .mentors {
@@ -922,17 +1056,27 @@ body {
 }
 
 .mentors__wrapper {
-  padding: 51px 0 63px;
+  padding: 38px 0 63px;
 }
 
 .mentors__title {
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 50px;
   line-height: 144%;
+  font-family: 'sk-modernist-bold';
+  letter-spacing: -.5px;
   color: #000000;
-  width: calc(100% - 204px);
+  width: 100%;
+  max-width: 1285px;
+  padding: 0 35px;
   margin: 0 auto;
+}
+
+.mentors__title span {
+  width: 100%;
+  display: block;
+  max-width: 950px;
 }
 
 .mentors__slider {
@@ -1502,23 +1646,15 @@ body {
 }
 
 .feedback {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .feedback__container {
-  margin: 0 auto;
   width: 100%;
-  max-width: 1235px;
-}
-
-.feedback .swiper-wrapper {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .feedback__wrapper {
-  padding: 98px 0 105px;
+  padding: 41px 0 105px;
 }
 
 .feedback__title-mob {
@@ -1530,11 +1666,101 @@ body {
 }
 
 .feedback__title {
+  font-family: "sk-modernist-bold";
+  max-width: 1440px;
+  padding: 0 103px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 50px;
   line-height: 120%;
   color: #181818;
+}
+
+.feedback__title .nossos-cursos__slider-nav {
+  margin-top: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback__title .nossos-cursos__slider-nav .nossos-cursos__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+}
+
+.feedback__title .nossos-cursos__slider-nav .nossos-cursos__arrow svg {
+  width: 30px;
+  height: 30px;
+  stroke: #343A3F;
+}
+
+.feedback__title .nossos-cursos__slider-nav .swiper-pagination {
+  position: static;
+  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback__title .nossos-cursos__slider-nav .swiper-pagination-bullet {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+.feedback__title .nossos-cursos__slider-nav .swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.feedback__title .nossos-cursos__slider-nav .swiper-pagination-bullet-active:before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url(../img/slider-shadow-pagination.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
 }
 
 .feedback__flex {
@@ -1546,12 +1772,15 @@ body {
           justify-content: space-between;
   margin-top: 32px;
   padding-right: 16px;
+  margin-left: calc((100vw - 1236px)/ 2);
 }
 
 .feedback__block {
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
   padding: 40px 40px 50px;
+  padding-left: 0;
+  padding-right: 60px;
 }
 
 .feedback__block-title {
@@ -1616,7 +1845,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 37px;
+  max-width: 1440px;
+  padding: 0 103px;
+  margin: 0 auto;
 }
 
 .feedback__btn a {
@@ -1686,7 +1917,7 @@ body {
 }
 
 .curso-functiona .line-web {
-  top: 365px;
+  top: 305px;
   content: '';
   position: absolute;
   display: block;
@@ -1702,7 +1933,7 @@ body {
 }
 
 .curso-functiona__wrapper {
-  padding: 115px 0 139px;
+  padding: 55px 0 139px;
 }
 
 .curso-functiona__title {
@@ -1712,6 +1943,7 @@ body {
   line-height: 86px;
   color: #000000;
   text-align: center;
+  font-family: sk-modernist-bold;
 }
 
 .curso-functiona__flex {
@@ -1889,6 +2121,7 @@ body {
           align-items: center;
   color: #000000;
   text-transform: uppercase;
+  font-family: "sk-modernist-bold";
 }
 
 .principais-recursos__block {
@@ -2024,7 +2257,7 @@ body {
   border-radius: 30px;
   padding: 31px 22px 22px;
   position: relative;
-  top: -61px;
+  top: -91px;
   width: 345px;
 }
 
@@ -2220,14 +2453,38 @@ body {
 }
 
 .footer .container {
-  max-width: 1440px;
+  max-width: 1190px;
 }
 
 .footer__wrapper {
   padding: 33px 41px 22px 48px;
+  padding-left: 0;
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__cpd {
+  width: 73px;
+  height: 67px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__cpd-mob {
+  display: none;
 }
 
 .footer__block {
+  width: 100%;
+  max-width: 958px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2266,6 +2523,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+}
+
+.footer__flex span {
+  margin-bottom: 18px;
+}
+
+.footer__flex span:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.footer__flex span:last-child {
+  display: none;
 }
 
 .footer__flex .br-mob {
@@ -2291,15 +2571,28 @@ body {
   color: #167FB9;
 }
 
-.footer__flex span {
+.footer__links-soc > a {
   display: block;
+  margin-bottom: 19px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
 }
 
-.footer__flex span:nth-child(2) {
-  margin: 0 116px !important;
+.footer__links-soc > a:hover {
+  color: #167FB9;
 }
 
-.footer__links-soc {
+.footer__links-soc--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2314,8 +2607,8 @@ body {
   transition: all .4s;
 }
 
-.footer__soc-block:hover {
-  opacity: 0.7;
+.footer__soc-block:hover svg {
+  fill: #000;
 }
 
 .footer__soc-block:last-child {
@@ -2325,6 +2618,10 @@ body {
 .footer__soc-block svg {
   width: 100%;
   height: 100%;
+  fill: #1EA0FF;
+  -webkit-transition: .3s linear;
+  -o-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .footer__info {
@@ -2366,14 +2663,44 @@ body {
   }
 }
 
-@media (max-width: 1300px) {
-  .footer__flex span:nth-child(2) {
-    margin: 0 55px;
+@media all and (max-width: 1350px) {
+  .nossos-cursos__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .nossos-cursos__right {
+    left: 0;
+    max-width: 614px;
+  }
+
+  .nossos-cursos-formacao .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .nossos-cursos-block .swiper-wrapper {
+    margin: 0;
+  }
+
+  .nossos-cursos-block-item {
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 1290px) {
-  .nossos-cursos__container {
+@media all and (max-width: 1290px) {
+  .feedback__title {
+    padding: 0 35px;
+  }
+
+  .feedback__flex {
     margin-left: 35px;
   }
 }
@@ -2421,10 +2748,6 @@ body {
     font-size: 32px;
   }
 
-  .feedback__container {
-    padding: 0 0 0 35px;
-  }
-
   .feedback__wrapper {
     padding: 80px 0 90px;
   }
@@ -2439,34 +2762,23 @@ body {
   }
 }
 
+@media all and (max-width: 1250px) {
+  .nossos-cursos .container {
+    padding: 0 35px;
+  }
+
+  .feedback__btn {
+    padding: 0 15px;
+  }
+}
+
 @media (max-width: 1200px) {
-  .nossos-cursos__wrapper {
-    padding: 75px 0 90px;
-  }
-
-  .nossos-cursos__title {
-    font-size: 55px;
-  }
-
-  .nossos-cursos__slider {
-    margin-top: 70px;
-    height: 320px;
-  }
-
-  .nossos-cursos__slide-title {
-    font-size: 48px;
-  }
-
-  .nossos-cursos__slider-nav {
-    margin-top: 95px;
-  }
-
   .curso-functiona .line-web {
     top: 270px;
   }
 
   .curso-functiona__wrapper {
-    padding: 70px 0 70px;
+    padding: 55px 0 70px;
   }
 
   .curso-functiona__flex {
@@ -2485,12 +2797,14 @@ body {
     padding: 33px 15px 22px;
   }
 
-  .footer__flex span:nth-child(2) {
-    margin: 0 35px !important;
-  }
-
   .footer__soc-block {
     margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .footer__cpd {
+    margin-right: 30px;
   }
 }
 
@@ -2543,7 +2857,112 @@ body {
   }
 
   .high-time__wrapper {
-    height: 160px;
+    height: 220px;
+  }
+}
+
+@media all and (max-width: 998px) {
+  .nossos-cursos__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .nossos-cursos__right {
+    padding-left: 0;
+    max-width: initial;
+  }
+
+  .nossos-cursos-formacao {
+    margin-top: 30px;
+  }
+
+  .nossos-cursos-formacao__title {
+    margin-left: 0;
+  }
+
+  .nossos-cursos-formacao .swiper-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .nossos-cursos-block-slider .swiper-wrapper {
+    margin: 0 -15px;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+  }
+
+  .nossos-cursos-block {
+    margin-bottom: 50px;
+  }
+
+  .nossos-cursos-block__title {
+    margin-left: 0;
+  }
+
+  .nossos-cursos-block .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
+  .nossos-cursos-block-item {
+    margin: 0 15px;
+  }
+
+  .nossos-cursos-block-item.one {
+    margin-left: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .nossos-cursos-block-item.two {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .nossos-cursos-block-item.three {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .nossos-cursos-block-item.four {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .nossos-cursos-block-item.fife {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+
+  .nossos-cursos-block-item.six {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+
+  .nossos-cursos-block-item.seven {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+
+  .nossos-cursos-block-item.four {
+    display: block;
   }
 }
 
@@ -2584,38 +3003,12 @@ body {
     font-size: 28px;
   }
 
-  .numbers__flex {
-    margin-top: 50px;
-  }
-
-  .nossos-cursos__title {
-    font-size: 52px;
-  }
-
-  .nossos-cursos__slider {
-    margin-top: 65px;
-  }
-
-  .nossos-cursos__slide-title {
-    font-size: 44px;
-  }
-
-  .feedback .swiper-wrapper {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
   .feedback__wrapper {
     padding: 70px 0 50px;
   }
 
   .feedback__title {
     font-size: 48px;
-  }
-
-  .feedback__flex {
-    height: 440px;
   }
 
   .feedback__block {
@@ -2719,10 +3112,21 @@ body {
   .footer__flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__flex span {
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
+  }
+
+  .footer__flex span:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .footer__flex span:last-child {
+    display: block;
   }
 
   .footer__soc-block {
@@ -2735,6 +3139,25 @@ body {
   .footer__info {
     text-align: center;
     margin-top: 30px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .footer__cpd {
+    display: none;
+  }
+
+  .footer__cpd-mob {
+    display: block;
+    margin-bottom: 45px;
+    width: 99px;
+    height: 91px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .footer__links-soc > a {
+    display: none;
   }
 }
 
@@ -2768,18 +3191,6 @@ body {
     padding: 0;
   }
 
-  .nossos-cursos__wrapper {
-    padding: 40px 0 90px;
-  }
-
-  .nossos-cursos__slider-nav {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-right: 0;
-    margin-top: 80px;
-  }
-
   .mentors__slider {
     margin-top: 20px;
   }
@@ -2793,7 +3204,7 @@ body {
   }
 
   .curso-functiona__wrapper {
-    padding: 50px 0 70px;
+    padding: 50px 0 30px;
   }
 
   .curso-functiona__title {
@@ -2879,10 +3290,6 @@ body {
     margin-top: 15px;
     display: none;
     margin-bottom: 20px;
-  }
-
-  .high-time__wrapper {
-    height: 150px;
   }
 
   .high-time__web {
@@ -3040,7 +3447,7 @@ body {
   }
 
   .numbers__container {
-    padding: 0 25px 0 22px;
+    padding: 0 21px 0 21px;
   }
 
   .numbers__text {
@@ -3050,75 +3457,33 @@ body {
   }
 
   .numbers__flex {
-    margin-top: 23px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
   .numbers__block:first-child {
+    max-width: 123px;
     margin-bottom: 48px;
     margin-right: 24px;
   }
 
-  .nossos-cursos__container {
-    margin-left: 23px;
-  }
-
-  .nossos-cursos__wrapper {
-    padding: 31px 0 103px;
-  }
-
-  .nossos-cursos__title {
-    font-size: 40px;
-  }
-
-  .nossos-cursos__slider {
-    margin-top: 33px;
-    height: 271px;
-  }
-
-  .nossos-cursos__slider .swiper-slide {
-    width: 278px;
-  }
-
-  .nossos-cursos__slide-title {
-    font-size: 40px;
-  }
-
-  .nossos-cursos__slide-title-small span {
-    display: block;
-  }
-
-  .nossos-cursos__slide-title-small .span-hide-mob {
-    display: none;
-  }
-
-  .nossos-cursos__slide-duration {
-    padding: 2px 10px 0;
-    font-size: 16px;
-    line-height: 150%;
-  }
-
-  .nossos-cursos__slide-btn {
-    margin-right: 0;
-  }
-
-  .nossos-cursos__slider-nav {
-    margin-top: 71px;
-  }
-
   .mentors__wrapper {
-    padding: 19px 0 16px;
+    padding: 53px 0 16px;
   }
 
   .mentors__title {
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 125%;
+    font-size: 36px;
+    line-height: 50px;
     /* or 125% */
     color: #000000;
-    padding: 0 27px;
+    padding: 0 7px;
+    padding-bottom: 37px;
+  }
+
+  .mentors__title span {
+    max-width: 362px;
   }
 
   .mentors__slider {
@@ -3133,30 +3498,34 @@ body {
     margin-left: 25px;
   }
 
-  .feedback__container {
-    padding: 0;
-  }
-
   .feedback__wrapper {
-    padding: 18px 0 77px;
+    padding: 110px 0 30px;
   }
 
   .feedback__title-mob {
     display: block;
+    font-weight: normal;
   }
 
   .feedback__title-web {
     display: none;
   }
 
+  .feedback__title .nossos-cursos__slider-nav {
+    display: none;
+  }
+
   .feedback__title {
     padding-left: 18px;
-    line-height: 112%;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding-right: 18px;
+    font-size: 40px;
   }
 
   .feedback__flex {
     margin-top: 1px;
-    height: 390px;
+    margin-left: 0;
   }
 
   .feedback__block {
@@ -3168,15 +3537,19 @@ body {
     margin-top: 32px;
   }
 
+  .feedback__btn a {
+    font-size: 35px;
+  }
+
   .curso-functiona__wrapper {
-    padding: 42px 0 30px;
+    padding: 61px 0 30px;
   }
 
   .curso-functiona__title {
     font-size: 40px;
     line-height: 48px;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   .curso-functiona__flex {
@@ -3217,10 +3590,6 @@ body {
     margin-bottom: 0;
   }
 
-  .high-time__wrapper {
-    height: 140px;
-  }
-
   .high-time__text-block {
     font-size: 20px;
   }
@@ -3240,7 +3609,7 @@ body {
   }
 
   .principais-recursos__wrapper {
-    padding: 43px 0 14px;
+    padding: 0 0 14px;
   }
 
   .principais-recursos__title {
@@ -3324,26 +3693,46 @@ body {
     line-height: 12px;
   }
 
-  .footer__flex span {
-    text-align: center;
+  .footer__links-soc > a {
+    line-height: 12px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .nossos-cursos .container {
+    padding: 0 16px;
   }
 
-  .footer__flex span:first-child {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-bottom: 30px !important;
+  .nossos-cursos__title {
+    font-size: 60px;
+    line-height: 110%;
   }
 
-  .footer__flex span:nth-child(2) {
-    margin: 0 0 30px !important;
+  .nossos-cursos__text {
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 328px;
   }
 
-  .footer__flex span:last-child {
-    margin: 0 0 30px !important;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+  .nossos-cursos-formacao__title {
+    font-family: 'sk-modernist-bold';
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  .nossos-cursos-block-slider {
+    overflow: initial;
+  }
+
+  .nossos-cursos-block {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .nossos-cursos-block__title {
+    font-family: 'sk-modernist-bold';
+    font-size: 30px;
+    line-height: 150%;
   }
 }
 
@@ -3358,7 +3747,7 @@ body {
     width: 100%;
   }
 
-  .footer__links-soc {
+  .footer__links-soc--wrapper {
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3369,6 +3758,16 @@ body {
 @media (max-width: 480px) {
   .principais-recursos__slider {
     height: 240px;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .nossos-cursos-formacao__title {
+    font-size: 30px;
+  }
+
+  .nossos-cursos-block__title {
+    font-size: 30px;
   }
 }
 
@@ -3398,30 +3797,11 @@ body {
     max-width: 123px;
   }
 
-  .nossos-cursos__title {
-    font-size: 35px;
-    white-space: nowrap;
-  }
-
-  .feedback__title {
-    font-size: 42px;
-  }
-
   .feedback__btn {
     margin-left: 0;
   }
 
-  .feedback__btn a {
-    font-size: 38px;
-  }
-
   .footer__soc-block {
     margin-right: 25px;
-  }
-}
-
-@media (max-width: 320px) {
-  .nossos-cursos__container {
-    margin-left: 15px;
   }
 }

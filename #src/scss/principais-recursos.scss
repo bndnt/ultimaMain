@@ -19,7 +19,7 @@
       padding: 70px 0 50px;
     }
     @media (max-width: 650px) {
-      padding: 43px 0 14px;
+      padding: 0 0 14px;
     }
   }
 
@@ -32,6 +32,7 @@
     align-items: center;
     color: #000000;
     text-transform: uppercase;
+    font-family: "sk-modernist-bold";
     @media (max-width: 991px) {
       font-size: 44px;
     }
@@ -215,7 +216,7 @@
     border-radius: 30px;
     padding: 31px 22px 22px;
     position: relative;
-    top: -61px;
+    top: -91px;
     width: 345px;
     @media (max-width: 991px) {
       padding: 25px 18px 18px;
