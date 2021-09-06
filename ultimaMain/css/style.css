@@ -175,14 +175,6 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-ExtraBold";
-  font-display: swap;
-  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "CodecPro-Bold";
   font-display: swap;
   src: url("../fonts/CodecPro-Bold.woff") format("woff"), url("../fonts/CodecPro-Bold.woff2") format("woff2");
@@ -191,9 +183,9 @@ select {
 }
 
 @font-face {
-  font-family: "CodecPro-News";
+  font-family: "CodecPro-ExtraBold";
   font-display: swap;
-  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
+  src: url("../fonts/CodecPro-ExtraBold.woff") format("woff"), url("../fonts/CodecPro-ExtraBold.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -207,6 +199,14 @@ select {
 }
 
 @font-face {
+  font-family: "Gilroy-ExtraBold";
+  font-display: swap;
+  src: url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Gilroy-Bold";
   font-display: swap;
   src: url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.woff2") format("woff2");
@@ -215,9 +215,9 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-ExtraBold";
+  font-family: "CodecPro-News";
   font-display: swap;
-  src: url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/CodecPro-News.woff") format("woff"), url("../fonts/CodecPro-News.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -231,25 +231,17 @@ select {
 }
 
 @font-face {
-  font-family: "Gilroy-Light";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  font-display: swap;
-  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Gilroy-Regular";
   font-display: swap;
   src: url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -306,6 +298,14 @@ select {
   font-family: "PTRootUI-Regular";
   font-display: swap;
   src: url("../fonts/PTRootUI-Regular.woff") format("woff"), url("../fonts/PTRootUI-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  font-display: swap;
+  src: url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
