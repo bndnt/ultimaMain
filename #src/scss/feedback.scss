@@ -1,26 +1,19 @@
 .feedback {
-  overflow-x: hidden;
+  overflow: hidden;
   &__container {
-    margin: 0 auto;
     width: 100%;
-    max-width: 1235px;
-    @media (max-width: 1250px){
-      padding: 0 0 0 35px;
-    }
-    @media (max-width: 650px){
-      padding: 0;
-    }
-  }
 
-  .swiper-wrapper {
-    justify-content: space-between;
-    @media (max-width: 991px) {
-     justify-content:flex-start ;
-    }
   }
+  //
+  //.swiper-wrapper {
+  //  justify-content: space-between;
+  //  @media (max-width: 991px) {
+  //   justify-content:flex-start ;
+  //  }
+  //}
 
   &__wrapper {
-    padding: 98px 0 105px;
+    padding: 41px 0 105px;
     @media (max-width: 1250px){
       padding: 80px 0 90px;
     }
@@ -34,40 +27,108 @@
       padding: 40px 0 50px;
     }
     @media (max-width: 650px){
-      padding: 18px 0 77px;
+      padding: 110px 0 30px;
     }
   }
   &__title-mob{
     display: none;
     @media (max-width:650px){
       display: block;
+      font-weight: normal;
     }
   }
   &__title-web{
     display: block;
+
     @media (max-width:650px){
       display:none;
     }
   }
   &__title {
+    font-family: "sk-modernist-bold";
+    max-width: 1440px;
+    padding: 0 103px;
+    margin: 0 auto;
+    @media all and (max-width: 1290px) {
+      padding: 0 35px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 50px;
     line-height: 120%;
     color: #181818;
+    .nossos-cursos__slider-nav {
+      margin-top: 0;
+      padding-right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width:650px) {
+        display: none;
+      }
+      .nossos-cursos__arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        svg {
+          width: 30px;
+          height: 30px;
+          stroke:#343A3F;
+        }
+      }
+      .swiper-pagination {
+        position: static;
+        margin: 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-bullet {
+          position: relative;
+          width: 10px;
+          height: 10px;
+          margin: 0 4px;
+          &-active {
+            background: #000;
+            &:before {
+              content: '';
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              display: block;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%,-50%);
+              -ms-transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%);
+              background-image: url(../img/slider-shadow-pagination.svg);
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
     @media (max-width:991px){
     font-size: 48px;
     }
     @media (max-width:650px){
       padding-left: 18px;
-      line-height: 112%;
+      line-height: 100%;
+      text-transform: uppercase;
+      padding-right: 18px;
+      font-size: 40px;
     }
     //@media (max-width:991px){
     //font-size: 44px;
     //}
-    @media (max-width: 360px){
-    font-size: 42px;
-    }
+
   }
 
   &__flex {
@@ -75,22 +136,27 @@
     justify-content: space-between;
     margin-top: 32px;
     padding-right: 16px;
+    margin-left: calc((100vw - 1236px)/ 2);
+    @media all and (max-width: 1290px) {
+      margin-left: 35px;
+    }
     @media (max-width: 1250px){
       padding-right: 0;
     }
     @media (max-width: 991px){
-      height: 440px;
     }
     @media (max-width:650px){
       margin-top: 1px;
-      height: 390px;
+      margin-left: 0;
     }
   }
 
   &__block {
     width: 100%;
-    max-width: 380px;
+    max-width: 360px;
     padding: 40px 40px 50px;
+    padding-left: 0;
+    padding-right: 60px;
     @media (max-width: 1150px){
       padding: 35px 35px 40px;
     }
@@ -153,7 +219,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 37px;
+    max-width: 1440px;
+    padding: 0 103px;
+    margin: 0 auto;
+    @media all and (max-width: 1250px) {
+      padding: 0 15px;
+    }
 
     @media (max-width: 650px) {
       margin-top: 32px;
@@ -168,8 +239,8 @@
       line-height: 38px;
       color: #000000;
       position: relative;
-      @media (max-width: 360px){
-        font-size: 38px;
+      @media (max-width: 650px){
+        font-size: 35px;
       }
       &:after{
         content: '';

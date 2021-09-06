@@ -1,7 +1,7 @@
 .numbers{
   overflow-x: hidden;
   &__wrapper{
-    padding: 60px 0 119px;
+    padding: 60px 0 73px;
     @media (max-width: 1250px){
       padding: 45px 0 85px;
     }
@@ -17,7 +17,7 @@
       padding: 0 35px;
     }
     @media (max-width: 650px) {
-      padding: 0 25px 0 22px;
+      padding: 0 21px 0 21px;
     }
     @media (max-width: 360px){
       padding: 0 15px;
@@ -43,18 +43,14 @@
     }
   }
   &__flex{
-    margin-top: 79px;
     display: flex;
     justify-content: space-between;
-    padding: 0 60px 0 50px;
-    @media (max-width: 991px){
-      margin-top: 50px;
-    }
+    padding: 0 39px 0 50px;
+
     @media (max-width: 768px){
       padding: 0;
     }
     @media (max-width: 650px){
-      margin-top: 23px;
       flex-wrap: wrap;
     }
   }
@@ -63,6 +59,7 @@
       width: 100%;
       max-width: 140px;
       @media (max-width: 650px){
+        max-width: 123px;
         margin-bottom: 48px;
         margin-right: 24px;
       }

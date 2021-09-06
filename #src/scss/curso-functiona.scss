@@ -3,7 +3,7 @@
   overflow: hidden;
 
   .line-web {
-    top: 365px;
+    top: 305px;
     content: '';
     position: absolute;
     display: block;
@@ -35,9 +35,9 @@
   }
 
   &__wrapper {
-    padding: 115px 0 139px;
+    padding: 55px 0 139px;
     @media (max-width: 1200px) {
-      padding: 70px 0 70px;
+      padding: 55px 0 70px;
     }
     @media (max-width: 1100px) {
       padding: 50px 0 70px;
@@ -48,10 +48,10 @@
     }
 
     @media (max-width: 768px) {
-      padding: 50px 0 70px;
+      padding: 50px 0 30px;
     }
     @media (max-width: 650px) {
-      padding: 42px 0 30px;
+      padding: 61px 0 30px;
     }
   }
 
@@ -62,6 +62,7 @@
     line-height: 86px;
     color: #000000;
     text-align: center;
+    font-family: sk-modernist-bold;
     @media (max-width: 1100px) {
       font-size: 55px;
     }
@@ -75,7 +76,7 @@
       font-size: 40px;
       line-height: 48px;
       text-align: left;
-      padding: 0 20px;
+      padding: 0 16px;
     }
   }
 
