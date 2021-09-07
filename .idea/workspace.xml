@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe925a3-e48f-46fc-99c1-e330eb0f4dde" name="Default Changelist" comment="ad">
+      <change beforePath="$PROJECT_DIR$/#src/_feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_mentors.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_mentors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_nossos-cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_nossos-cursos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_numbers.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_numbers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/_principais-recursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/#src/_principais-recursos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/#src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/curso-functiona.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/curso-functiona.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/feedback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/feedback.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/#src/scss/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/high-time.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/high-time.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/mentors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/mentors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/nossos-cursos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/nossos-cursos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/numbers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/numbers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/#src/scss/principais-recursos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/#src/scss/principais-recursos.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ultimaMain/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ultimaMain/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultimaMain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultimaMain/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultimaMain/js/script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ultimaMain/js/script.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,9 +100,7 @@
       <workItem from="1630503636736" duration="905000" />
       <workItem from="1630656932507" duration="12399000" />
       <workItem from="1630743166548" duration="13995000" />
-      <workItem from="1630917749052" duration="16341000" />
-      <workItem from="1630945172990" duration="2127000" />
-      <workItem from="1631005690926" duration="618000" />
+      <workItem from="1630917749052" duration="16027000" />
     </task>
     <servers />
   </component>
@@ -122,14 +120,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1630941527134">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1630941527134" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1630941502199">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1630941502199" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1630688909812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
